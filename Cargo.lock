@@ -1384,6 +1384,7 @@ dependencies = [
 name = "tracer-bullet"
 version = "0.1.0"
 dependencies = [
+ "nebula-core",
  "nebula-platform",
  "nebula-renderer-cpu",
  "tracing",
