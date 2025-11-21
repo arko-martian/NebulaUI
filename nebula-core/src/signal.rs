@@ -40,6 +40,8 @@ impl<T: Clone> Signal<T> {
         }
     }
 
+    
+
     /// Update the value using a function and notify subscribers
     pub fn update<F>(&self, f: F)
     where
