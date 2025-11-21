@@ -1,0 +1,11 @@
+[package]
+name = "nebula-platform"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+winit = { workspace = true }
+raw-window-handle = { workspace = true }
+tracing = { workspace = true }

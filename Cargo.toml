@@ -1,0 +1,33 @@
+[workspace]
+resolver = "2"
+members = [
+    "nebula-core",
+    "nebula-platform",
+    "nebula-renderer-cpu",
+    "nebula-gfx", "tracer-bullet",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["Arko McCallister"]
+
+[workspace.dependencies]
+# Core dependencies
+winit = "0.30"
+raw-window-handle = "0.6"
+softbuffer = "0.4"
+tiny-skia = "0.11"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+[profile.dev]
+opt-level = 1  # Some optimization for better dev experience
+
+[profile.release]
+opt-level = "z"  # Optimize for size
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
