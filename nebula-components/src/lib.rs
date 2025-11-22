@@ -30,8 +30,10 @@ pub mod button;
 pub mod text;
 pub mod container;
 pub mod spacer;
+pub mod divider;
 
 pub use button::Button;
 pub use text::Text;
 pub use container::{VStack, HStack, ZStack, Alignment};
 pub use spacer::{Spacer, SpacerType};
+pub use divider::{Divider, DividerOrientation, DividerColor};
