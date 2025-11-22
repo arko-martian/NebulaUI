@@ -9,3 +9,4 @@ authors.workspace = true
 nebula-core = { path = "../nebula-core" }
 tracing = { workspace = true }
 taffy = "0.5"
+image = "0.25"

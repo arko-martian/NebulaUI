@@ -1,0 +1,29 @@
+[package]
+name = "nebula-renderer-webgl"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+tracing = { workspace = true }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm-bindgen = "0.2"
+web-sys = { version = "0.3", features = [
+    "Document",
+    "Element",
+    "HtmlCanvasElement",
+    "WebGlRenderingContext",
+    "WebGl2RenderingContext",
+    "WebGlProgram",
+    "WebGlShader",
+    "WebGlBuffer",
+    "WebGlUniformLocation",
+    "Window",
+    "CanvasRenderingContext2d",
+] }
+js-sys = "0.3"
+
+[lib]
+crate-type = ["cdylib", "rlib"]

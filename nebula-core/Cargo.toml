@@ -9,3 +9,8 @@ authors.workspace = true
 tracing = { workspace = true }
 fontdue = "0.9"
 taffy = "0.5"
+# Hot reload dependencies
+notify = "6.1"
+libloading = "0.8"
+bincode = "1.3"
+serde = { version = "1.0", features = ["derive"] }
