@@ -8,3 +8,4 @@ authors.workspace = true
 [dependencies]
 nebula-core = { path = "../nebula-core" }
 tracing = { workspace = true }
+taffy = "0.5"
