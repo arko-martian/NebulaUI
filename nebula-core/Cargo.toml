@@ -14,3 +14,7 @@ notify = "6.1"
 libloading = "0.8"
 bincode = "1.3"
 serde = { version = "1.0", features = ["derive"] }
+# Accessibility dependencies
+accesskit = "0.12"
+# Performance profiling
+puffin = "0.19"

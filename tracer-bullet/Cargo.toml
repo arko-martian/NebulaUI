@@ -3,10 +3,19 @@ name = "tracer-bullet"
 version.workspace = true
 edition.workspace = true
 
+[[bin]]
+name = "tracer-bullet"
+path = "src/main.rs"
+
+[[bin]]
+name = "visual_demo"
+path = "src/visual_demo.rs"
+
 [dependencies]
 nebula-core = { path = "../nebula-core" }
 nebula-platform = { path = "../nebula-platform" }
 nebula-renderer-cpu = { path = "../nebula-renderer-cpu" }
+nebula-components = { path = "../nebula-components" }
 winit = { workspace = true }
 tracing = { workspace = true }
 tracing-subscriber = { workspace = true }
