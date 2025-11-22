@@ -4,7 +4,9 @@ members = [
     "nebula-core",
     "nebula-platform",
     "nebula-renderer-cpu",
-    "nebula-gfx", "tracer-bullet",
+    "nebula-renderer-gl33",
+    "nebula-gfx",
+    "tracer-bullet", "nebula-components",
 ]
 
 [workspace.package]

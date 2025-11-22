@@ -1,10 +1,11 @@
 [package]
-name = "nebula-core"
+name = "nebula-renderer-gl33"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
 authors.workspace = true
 
 [dependencies]
+glow = "0.14"
+raw-window-handle = { workspace = true }
 tracing = { workspace = true }
-fontdue = "0.9"
